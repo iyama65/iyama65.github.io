@@ -64,6 +64,7 @@ header p{
 .works-container{
     display: flex;
     justify-content: space-between;
+    width: 970px;
 }
 
 .graphic {

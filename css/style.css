@@ -65,13 +65,14 @@ header p{
     display: flex;
     justify-content: space-between;
     width: 970px;
+    margin: 0 auto;
 }
 
 .graphic {
     text-align: center;
     font-size: 26px;
     width: 200px;
-    margin-left: 150px;
+
 }
 
 .picture {
@@ -84,7 +85,7 @@ header p{
     text-align: center;
     font-size: 26px;
     width: 200px;
-    margin-right: 150px;
+
 }
 
 footer{

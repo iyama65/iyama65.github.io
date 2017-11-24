@@ -1,0 +1,116 @@
+/*Common 共通スタイル*/
+
+body{
+    font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+a{
+    color: #2D9CDB;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #CCC;
+    text-decoration: none;
+}
+/*Header*/
+header{
+    width: 950px;
+    height: 100px;
+    margin: 0 auto; /*真ん中（左右）*/
+    display: flex;/*子要素*/
+    align-items: center;/*上下の真ん中（p）*/
+}
+header h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    width: 15rem;/*remは文字数*/
+}
+header p{
+    width: 25rem;
+}
+
+/*nav*/
+nav{
+    width: 950px;
+    height: 70px;
+    margin: 0 auto;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/*自動的に余白を作る*/
+    padding-left: 0;
+}
+
+nav ul li{
+    list-style: none; /*頭の黒い点が消える*/
+    width: 150px;
+}
+
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px #000 solid;
+    display: block;
+}
+
+nav ul li a:hover{
+    color: #CCC;
+    border-bottom: 1px #CCC solid;
+}
+
+/*main-visual*/
+.main-visual{
+    width: 950px;
+    margin: 0 auto 30px;
+}
+
+/*container*/
+.container{
+    width: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border-bottom: 1px #000 solid;
+    font-weight: 700;
+}
+
+.whatsnew{
+    width: 310px;
+}
+
+.about{
+    width: 310px;
+}
+
+.todaysmenu{
+    width: 310px;
+}
+
+.todaysmenu-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.todaysmenu section{
+    width: 150px;
+}
+
+/*footer*/
+footer{
+    width: 950px;
+    margin:50px auto;
+}
+
+footer p{
+    text-align: right;
+}

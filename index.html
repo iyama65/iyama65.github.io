@@ -56,13 +56,23 @@
     </footer>
 
 <script>
-
+//グローバル変数
 var headerTitle = document.querySelector('#header-title');
+
+//イベント
+headerTitle.addEventListener('click',changeStyle);
+
+//関数
+function changeStyle(){
 headerTitle.style.color = '#FFFFFF';
+
 var headerSub = document.querySelector('#header-sub');
 headerSub.style.color = '#FFFFFF';
+
 var headerBg = document.querySelector('.header-bg');
 headerBg.style.backgroundColor = '#FF00FF';
+
+}
 
 </script>
 

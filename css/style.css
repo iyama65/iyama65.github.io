@@ -101,6 +101,9 @@ header p{
         width: 100%;
         display: block;
     }
+    .works-container section{
+        width: 100%;
+    }
 }
 
 footer{

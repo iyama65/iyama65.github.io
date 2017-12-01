@@ -53,6 +53,12 @@ header p{
 
 }
 
+@media(max-width:750px){
+    .profile{
+        width: 100%;
+        padding: 72px 16px;
+    }
+}
 .works{
     width: 100%;
     padding-bottom: 80px;

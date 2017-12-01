@@ -96,6 +96,13 @@ header p{
 
 }
 
+@media (max-width:750px){
+    .works-container{
+        width: 100%;
+        display: block;
+    }
+}
+
 footer{
     width: 950px;
     margin:50px auto;

@@ -34,7 +34,7 @@ header p{
 /*スマホ用*/
 @media (max-width: 750px){
     header{
-        background-position: -200px center;
+        background-position: -400px center;
     }
     .header-bg{
         background: rgba(255, 0, 0, 0.5);

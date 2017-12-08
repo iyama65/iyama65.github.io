@@ -97,6 +97,11 @@ var speedY = [];
 var diameter = []; //円の直径
 var colors = []; //色
 var NUM = 100; //配列の数
+var img;
+
+function preload(){
+    img = loadImage("img/main.jpg")
+}
 
     function setup(){
         // size
@@ -118,6 +123,7 @@ var NUM = 100; //配列の数
 
     function draw(){
         background(0);
+        image(img,0,0);
         noStroke();
 
         for(var i=0; i <NUM; i++){

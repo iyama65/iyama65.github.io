@@ -64,13 +64,13 @@
     function windowResized(){
         console.log('拡大縮小')
         resizeCanvas(windowWidth,600);
+    }
 
+    function imgResize(){
         if(windowWidth > defaultImgW){
         //画像の幅をウィンドウ幅と同じにする
         scaleImgW = windowWidth;
         //画像の高さを伸びた幅に合わせて変化
         scaleImgH = windowWidth / defaultRatio;
         }
-
-
     }

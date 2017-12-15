@@ -10,7 +10,11 @@
     var defaultImgW = 1284; //元画像の幅、高さ
     var defaultImgH = 600;
     var defaultRatio = defaultImgW / defaultImgH; //元画像の比率
-    console.log(defaultRatio);
+
+    //拡大縮小あとの幅と高さ
+    //初期値として最初の値を入れる
+    var scaleImgW = defaultImgW;
+    var scaleImgH = defaultImgH;
 
     function preload(){
         img = loadImage("img/main.jpg");
@@ -37,7 +41,7 @@
 
     function draw(){
         background(0);
-        image(img,0,0);
+        image(img,0,0,scaleImgW,scaleImgH); 
         noStroke();
 
         for(var i=0; i <NUM; i++){

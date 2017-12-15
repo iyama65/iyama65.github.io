@@ -15,7 +15,7 @@
     <div id="container">
 
     </div>
-    <header>
+    <header id="header">
         <div class="header-bg">
             <h1 id="header-title">SUZUNA IYAMA PORTFOLIO SITE</h1>
             <p id="header-sub">GRAPHIC  / PICTURE  /  WEB </p>
@@ -59,97 +59,34 @@
         </p>
     </footer>
 
-<script>
+    <script>
 //グローバル変数
-var headerTitle = document.querySelector('#header-title');
-console.log(headerTitle);
-var numA = 10;
-var numB = 20;
-var numC = numA + numB;
-console.log(numC);
-//イベント
-headerTitle.addEventListener('click',changeStyle);
+    // var headerTitle = document.querySelector('#header-title');
+    // console.log(headerTitle);
+    // var numA = 10;
+    // var numB = 20;
+    // var numC = numA + numB;
+    // console.log(numC);
+    // //イベント
+    // headerTitle.addEventListener('click',changeStyle);
+    //
+    // //関数
+    // function changeStyle(){
+    // headerTitle.style.color = '#FFFFFF';
+    //
+    // var headerSub = document.querySelector('#header-sub');
+    // headerSub.style.color = '#FFFFFF';
+    //
+    // var headerBg = document.querySelector('.header-bg');
+    // headerBg.style.backgroundColor = '#008b8b';
+    //
+    // }
 
-//関数
-function changeStyle(){
-headerTitle.style.color = '#FFFFFF';
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script>
 
-var headerSub = document.querySelector('#header-sub');
-headerSub.style.color = '#FFFFFF';
-
-var headerBg = document.querySelector('.header-bg');
-headerBg.style.backgroundColor = '#008b8b';
-
-}
-
-</script>
-
-
-
+    <script src="js/script.js"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script>
-<script>
-
-var posX = [];
-var posY = [];
-var speedX = [];
-var speedY = [];
-var diameter = []; //円の直径
-var colors = []; //色
-var NUM = 100; //配列の数
-var img;
-
-function preload(){
-    img = loadImage("img/main.jpg");
-}
-
-    function setup(){
-        // size
-        var canvas = createCanvas(windowWidth,700);
-        // div#containerの中にcanvasを入れた
-        canvas.parent('container');
-        colorMode(HSB,360,100,100,100);
-
-        for(var i = 0; i < NUM; i++){
-            diameter[i] = random(15,60);
-            colors[i] = color(random(360),100,100,30);
-            posX[i] = random(width);
-            speedX[i] = random(-4,4);
-            posY[i] = random(height);
-            speedY[i] = random(-4,4);
-        }
-
-    }
-
-    function draw(){
-        background(0);
-        image(img,0,0);
-        noStroke();
-
-        for(var i=0; i <NUM; i++){
-            fill(colors[i]);
-            ellipse(posX[i],posY[i],diameter[i],diameter[i]);
-            posX[i] += speedX[i];
-
-            if (posX[i] > width || posX[i] < 0){
-                speedX[i] = -1 * speedX[i];
-            }
-
-            posY[i] += speedY[i];
-            if (posY[i] > height || posY[i] < 0){
-                speedY[i] = -1 * speedY[i];
-            }
-        }
-
-    }
-
-    function windowResized(){
-        resizeCanvas(windowWidth,700);
-    }
 
 
-
-
-
-</script>
 </html>

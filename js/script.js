@@ -41,7 +41,7 @@
 
     function draw(){
         background(0);
-        image(img,0,0,scaleImgW,scaleImgH); 
+        image(img,0,0,scaleImgW,scaleImgH);
         noStroke();
 
         for(var i=0; i <NUM; i++){
@@ -62,5 +62,6 @@
     }
 
     function windowResized(){
-        resizeCanvas(windowWidth,700);
+        console.log('拡大縮小')
+        resizeCanvas(windowWidth,600);
     }

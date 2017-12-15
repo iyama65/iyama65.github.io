@@ -41,6 +41,7 @@
 
     function draw(){
         background(0);
+        imgResize();
         image(img,0,0,scaleImgW,scaleImgH);
         noStroke();
 

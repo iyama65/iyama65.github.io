@@ -6,7 +6,11 @@
     var diameter = []; //円の直径
     var colors = []; //色
     var NUM = 100; //配列の数
-    var img;
+    var img; //画像を保存する変数
+    var defaultImgW = 1284; //元画像の幅、高さ
+    var defaultImgH = 600;
+    var defaultRatio = defaultImgW / defaultImgH; //元画像の比率
+    console.log(defaultRatio);
 
     function preload(){
         img = loadImage("img/main.jpg");

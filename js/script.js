@@ -47,7 +47,7 @@
 
         for(var i=0; i <NUM; i++){
             fill(colors[i]);
-            ellipse(posX[i],posY[i],diameter[i],diameter[i]);
+            rect(posX[i],posY[i],diameter[i],diameter[i]);
             posX[i] += speedX[i];
 
             if (posX[i] > width || posX[i] < 0){

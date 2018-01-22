@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* common ---------------------- */
+body {
+    background-color: #4c4c4c;
+    font-size: 14px;
+}
+
+#defaultCanvas0{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100vh;
+}
+
+/* header ------------------------*/
+#page-header{
+    height: 100px;;
+    background-color: #4c4c4c;
+}
+
+.site-id{
+
+    position: absolute;
+    left: 150px;
+    top: 20px;
+    z-index: 10;
+}
+
+.site-id h1{
+    font-family: 'Saira', sans-serif;
+    font-size: 45px;
+    margin-top: 10px;
+    color: #4c4c4c;
+}
+.site-id h2{
+    font-size: 18px;
+    text-decoration: none;
+    color: #4c4c4c;
+}
+
+.site-id p{
+    font-size: 10px;
+    text-decoration: none;
+    color: #4c4c4c;
+}
+#page-header nav ul{
+    left:10px;
+    top: 100px;
+    z-index: 10;
+}
+#page-header nav ul li{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    margin-bottom: 2px;
+}

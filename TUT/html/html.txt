@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>東京工科大学</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <h1><span id="sub">数字で見る</span>　<span id="main">東京工科大学</span>　八王子キャンパス</h1>
+    </header>
+    <div id="content">
+        <div id="gakubu">
+            <h2>4</h2>
+            <div id="gakubu-cara1">
+                <img src="img/gakubu/1/boy-kougaku.png" alt="">
+            </div>
+            <div id="gakubu-cara2">
+                <img src="img/gakubu/1/boy-pc.png" alt="">
+            </div>
+            <div id="gakubu-cara3">
+                <img src="img/gakubu/1/woman-media.png" alt="">
+            </div>
+            <div id="gakubu-cara4">
+                <img src="img/gakubu/1/woman-seibutsu.png" alt="">
+            </div>
+        </div>
+
+        <div id="horse">
+            <h2>10</h2>
+            <div id="horse-cara1">
+                <img src="img/horse/1/Horse2.png" alt="">
+            </div>
+        </div>
+
+        <div id="bus">
+            <h2>21</h2>
+            <div id="bus-cara1">
+                <img src="img/bus/1/bus1.png" alt="">
+            </div>
+        </div>
+
+        <div id="douzou">
+            <h2>23</h2>
+            <div id="douzou-cara">
+                <img src="img/douzou/1" alt="">
+            </div>
+        </div>
+
+        <div id="zihanki">
+            <h2>67</h2>
+            <div id="zihanki-cara">
+                <img src="img/zihanki/zihanki.png" alt="">
+            </div>
+            <div id="horse-cara2">
+                <img src="img/horse/1/Horse2.png" alt="">
+            </div>
+        </div>
+
+        <div id="teacher">
+            <h2>116</h2>
+            <div id="teacher-cara1">
+                <img src="img/teacher/boy1.png" alt="">
+            </div>
+            <div id="kokuban">
+                <img src="img/teacher/teacher.png" alt="">
+            </div>
+        </div>
+
+        <div id="lump">
+            <h2>137</h2>
+            <div id="lump1">
+                <img src="img/lump/lump1.png" alt="">
+            </div>
+            <div id="lump2">
+                <img src="img/lump/lump2.png" alt="">
+            </div>
+            <div id="lump3">
+                <img src="img/lump/lump3.png" alt="">
+            </div>
+        </div>
+
+        <div id="ryugakusei">
+            <h2>217</h2>
+            <div id="ryugakusei-cara1">
+                <img src="img/ryugakusei/1/boy-ryugaku.png" alt="">
+            </div>
+            <div id="ryugakusei-cara2">
+                <img src="img/ryugakusei/1/woman-ryugaku.png" alt="">
+            </div>
+            <div id="ryugakusei-kokki1">
+                <img src="img/ryugakusei/1/kokki1.png" alt="">
+            </div>
+        </div>
+
+        <div id="school-bus">
+            <h2>250</h2>
+            <div id="bus-cara1">
+                <img src="img/bus/1/bus2.png" alt="">
+            </div>
+        </div>
+
+        <div id="computer">
+            <h2>5180</h2>
+            <div id="computer1">
+                <img src="img/computer/Computer-1.png" alt="">
+            </div>
+            <div id="computer2">
+                <img src="img/computer/Computer2.png" alt="">
+            </div>
+        </div>
+
+        <div id="gakusei">
+            <h2>5492</h2>
+            <div id="woman-cara1">
+                <img src="img/woman/1/woman.png" alt="">
+            </div>
+            <div id="woman-cara2">
+                <img src="img/woman/1/woman2.png" alt="">
+            </div>
+            <div id="woman-cara3">
+                <img src="img/woman/1/woman3.png" alt="">
+            </div>
+            <div id="woman-cara4">
+                <img src="img/woman/1/woman4.png" alt="">
+            </div>
+            <div id="boy-cara1">
+                <img src="img/boy/1/boy.png" alt="">
+            </div>
+            <div id="boy-cara2">
+                <img src="img/boy/1/boy2.png" alt="">
+            </div>
+            <div id="boy-cara3">
+                <img src="img/boy/1/boy3.png" alt="">
+            </div>
+            <div id="boy-cara4">
+                <img src="img/boy/1/boy4.png" alt="">
+            </div>
+        </div>
+
+        <div id="campus">
+            <h2>380,811</h2>
+            <div id="horse-cara4">
+                <img src="img/horse/1/horse3" alt="">
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

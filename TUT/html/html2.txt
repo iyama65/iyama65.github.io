@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>東京工科大学メディア学部</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1>東京工科大学　メディア学部</h1>
+            <p>TOKYO UNIVERSITY OF TECHNOLOGY</p>
+        </div>
+    </header>
+    <main>
+        <div class="inner">
+            <div id="about">
+                <div id="about-title">
+                    <img src=img/boy/1/boy.png alt="">
+                </div>
+                <div id="about-cource">
+                    <img src="img/bus/1/bus1.png" alt="">
+                </div>
+                <div id="cource-chart">
+                    <img src="img/course-chart.png" alt="">
+                </div>
+                <div id="jimoto">
+                    <h2>地元占有率</h2>
+                </div>
+                <div id="danjyoritxu">
+                    <h2>男女率</h2>
+                    <p>※1732人　2016.5.1</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+</body>
+</html>

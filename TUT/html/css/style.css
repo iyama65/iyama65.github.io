@@ -1,0 +1,906 @@
+@charset "UTF-8";
+
+/* common ---------------------- */
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body{
+    font-family:"Noto Sans Japanese","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size:16px;
+    line-height:1.5;
+    background-color: #DFF7FF;
+}
+a:link,a:visited{
+    color:#999999;
+    text-decoration: none;
+}
+a:hover,a:active{
+    color:#333333;
+    text-decoration: underline;
+}
+.inner{
+    width: 1440px;
+    margin: 0 auto; /* 中央寄せ */
+    background: url(../img/back/kousya.png) 60px bottom no-repeat;
+    padding-bottom: 630px;
+}
+
+
+@keyframes fadein {
+  0% {
+
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* header ------------------------*/
+header{
+    height: 360px;
+    background: url(../img/back/Group.png)
+    0 0 no-repeat;
+    background-position: center;
+    text-align:center;
+}
+
+header .inner{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+
+header h1{
+    font-family:sans-serif;
+    padding: 70px 0 8px 0;
+    margin:0 auto;
+    color: #7C3A0B;
+    font-size: 36px;
+    font-weight: 100;
+    width:909px;
+    height:178px;
+    text-shadow: 1px 2px 3px #FFF;
+    position:relative;
+}
+
+#sub{
+    padding: 0 0 8px 100px;
+    color: #FFF;
+    font-size: 72px;
+    font-weight: 100;
+    margin-top: 20px;
+    -webkit-text-stroke:.6px black;
+    text-shadow: 1px 2px 5px #000000;
+    position:absolute;
+    left:-92px;
+    top:75px;
+}
+#sub2{
+    padding: 0 0 8px 0px;
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 100;
+    margin-top: 40px;
+    -webkit-text-stroke:.6px black;
+    text-shadow: 1px 2px 5px #000000;
+    position:absolute;
+    left:156px;
+    top:90px;
+}
+#sub3{
+    position:absolute;
+    left:596px;
+    top:220px;
+}
+#main{
+    padding: 0 0 8px 0;
+    color: #7C3A0B;
+    font-size: 72px;
+    font-weight: 100;
+    margin-top: 40px;
+    text-shadow: 1px 2px 3px #FFF;
+    position:absolute;
+    left:156px;
+    top:140px;
+    text-decoration: underline;
+}
+main {
+    width:100%;
+    height:2294px;
+    background-color: #DFF7FF;
+    overflow: hidden;
+}
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+/*about*/
+#vector{
+    position: relative;
+    left:200px;
+    top:100px;
+}
+#carrot{
+    position:absolute;
+    top:360px;
+    left:130px;
+}
+#kousya{
+    position:absolute;
+    left:65px;
+    top:2150px;
+}
+#mon{
+    position:absolute;
+    left:70px;
+    top:382px;
+}
+#woman{
+    position:absolute;
+    left:170px;
+    top:380px;
+    transform: translateX(0px);
+    animation-name: runWoman;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+@-webkit-keyframes runWoman {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
+
+
+#gakubu h2{
+    position: absolute;
+    left:335px;
+    top:420px;
+    font-size: 60px;
+    color:#FFF;
+    text-shadow: 1px 2px 5px #000000;
+}
+#gakubu h3{
+    position: absolute;
+    left:315px;
+    top:345px;
+    font-size: 18px;
+}
+#gakubu h4{
+    position: absolute;
+    left:390px;
+    top:465px;
+    font-size: 36px;
+}
+
+.sprite2 {
+    position: absolute;
+    left:140px;
+    top:530px;
+    background: url(../img/gakubu/3/kougakubu.png) no-repeat;
+    width: 70px;
+    height: 90.165px;
+    animation: walk2 1s steps(2) infinite;
+}
+@keyframes walk2{
+    100%{
+        background-position: 0 -180.33px;
+    }
+}
+
+
+.sprite3 {
+    position: absolute;
+    left:246px;
+    top:530px;
+    background: url(../img/gakubu/3/pc.png) no-repeat;
+    width: 72px;
+    height: 92.305px;
+    animation: walk3 1s steps(2) infinite;
+}
+@keyframes walk3{
+    100%{
+        background-position: 0 -184.61px;
+    }
+}
+
+.sprite4 {
+    position: absolute;
+    left:366px;
+    top:530px;
+    background: url(../img/gakubu/3/media.png) no-repeat;
+    width: 59.11px;
+    height: 94.395px;
+    animation: walk4 1s steps(2) infinite;
+}
+@keyframes walk4{
+    100%{
+        background-position: 0 -188.79px;
+    }
+}
+
+.sprite5 {
+    position: absolute;
+    left:467px;
+    top:530px;
+    background: url(../img/gakubu/3/seibutu.png) no-repeat;
+    width: 61px;
+    height: 99.12px;
+    animation: walk5 1s steps(2) infinite;
+}
+@keyframes walk5{
+    100%{
+        background-position: 0 -198.24px;
+    }
+}
+#horse h2{
+    position: absolute;
+    left:645px;
+    top:420px;
+    font-size: 60px;
+    color:#FFF;
+    text-shadow: 1px 2px 5px #000000;
+}
+#horse h3{
+    position: absolute;
+    left:620px;
+    top:340px;
+    font-size: 18px;
+}
+#horse h4{
+    position: absolute;
+    left:715px;
+    top:470px;
+    font-size: 36px;
+}
+#horse-cara1{
+    position:absolute;
+    left:736px;
+    top:340px;
+    transform: translateX(-300px);
+    animation-name: runHorse;
+    animation-duration: 7s;
+    animation-timing-function: ease;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+@-webkit-keyframes runHorse {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+.sprite {
+    background: url(../img/horse/Group.png) no-repeat;
+    width: 142px;
+    height: 122.5px;
+    animation: walk 1s steps(2);
+    animation-iteration-count:7;
+}
+@keyframes walk{
+    100%{
+        background-position: 0 -245px;
+    }
+}
+#bus h2{
+    position: absolute;
+    left:1012px;
+    top:520px;
+    font-size: 60px;
+    color:#FFF;
+    text-shadow: 1px 2px 5px #000000;
+}
+#bus h3{
+    position: absolute;
+    left:972px;
+    top:436px;
+    font-size: 18px;
+}
+#bus h4{
+    position: absolute;
+    left:1082px;
+    top:570px;
+    font-size: 36px;
+}
+#bus-cara1{
+    position:absolute;
+    left:841px;
+    top:710px;
+    transform: translateX(0px);
+    animation-name: runBus;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 9s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+@-webkit-keyframes runBus {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-550px);
+  }
+}
+
+#douzou h2{
+    position: absolute;
+    left:640px;
+    top:760px;
+    font-size: 60px;
+    color:#FFF;
+    text-shadow: 1px 2px 5px #000000;
+}
+#douzou h3{
+    position: absolute;
+    left:620px;
+    top:680px;
+    font-size: 18px;
+}
+#douzou h4{
+    position: absolute;
+    left:710px;
+    top:810px;
+    font-size: 36px;
+}
+
+.sprite6 {
+    position: absolute;
+    left:533px;
+    top:803px;
+    background: url(../img/douzou/douzou.png) no-repeat;
+    width: 79px;
+    height: 132px;
+    animation: walk6 1s steps(2) infinite;
+}
+@keyframes walk6{
+    100%{
+        background-position: 0 -264px;
+    }
+}
+#zihanki h2{
+    position: absolute;
+    left:175px;
+    top:873px;
+    font-size: 60px;
+    color:#FFF;
+    text-shadow: 1px 2px 5px #000000;
+}
+#zihanki h3{
+    position: absolute;
+    left:145px;
+    top:777px;
+    font-size: 18px;
+}
+#zihanki h4{
+    position: absolute;
+    left:245px;
+    top:913px;
+    font-size: 36px;
+}
+
+.sprite7 {
+    position: absolute;
+    left:95px;
+    top:880px;
+    background: url(../img/zihanki/zihanki3.png) no-repeat;
+    width: 61px;
+    height: 132.94px;
+    animation: walk7 1s steps(2) infinite;
+}
+@keyframes walk7{
+    100%{
+        background-position: 0 -265.94px;
+    }
+}
+#horse-cara2{
+    position:absolute;
+    left:241px;
+    top:1006px;
+    transform: translateX(0px);
+    animation-name: runHorse2;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 12s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+@-webkit-keyframes runHorse2 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
+.sprite26 {
+    background: url(../img/horse/Group2.png) no-repeat;
+    width: 142px;
+    height: 122.5px;
+    animation: walk26 1s steps(2);
+    animation-iteration-count:infinite;
+}
+@keyframes walk26{
+    100%{
+        background-position: 0 -245px;
+    }
+}
+
+#teacher h2{
+    position: absolute;
+    left:695px;
+    top:1085px;
+    font-size: 60px;
+    color:#FFF;
+    text-shadow: 1px 2px 5px #000000;
+}
+#teacher h3{
+    position: absolute;
+    left:705px;
+    top:1005px;
+    font-size: 18px;
+}
+#teacher h4{
+    position: absolute;
+    left:795px;
+    top:1135px;
+    font-size: 36px;
+}
+
+.sprite8 {
+    position: absolute;
+    left:831px;
+    top:966px;
+    background: url(../img/teacher/teacher2.png) no-repeat;
+    width: 62px;
+    height: 96.5px;
+    animation: walk8 1s steps(2) infinite;
+}
+@keyframes walk8{
+    100%{
+        background-position: 0 -193px;
+    }
+}
+#kokuban{
+    position:absolute;
+    left:898px;
+    top:958px;
+}
+#lump h2{
+    position: absolute;
+    left:975px;
+    top:1210px;
+    font-size: 60px;
+    color:#FFF;
+    text-shadow: 1px 2px 5px #000000;
+}
+#lump h3{
+    position: absolute;
+    left:995px;
+    top:1110px;
+    font-size: 18px;
+}
+#lump h4{
+    position: absolute;
+    left:1075px;
+    top:1250px;
+    font-size: 36px;
+}
+
+.sprite9 {
+    position: absolute;
+    left:1056px;
+    top:1057px;
+    background: url(../img/lump/lump1.png) no-repeat;
+    width: 86.64px;
+    height: 141.09px;
+    animation: walk9 1s steps(2) infinite;
+}
+@keyframes walk9{
+    100%{
+        background-position: 0 -282.18px;
+    }
+}
+
+.sprite10 {
+    position: absolute;
+    left:860px;
+    top:1150px;
+    background: url(../img/lump/lump2.png) no-repeat;
+    width: 86.64px;
+    height: 141.09px;
+    animation: walk10 1s steps(2) infinite;
+}
+@keyframes walk10{
+    100%{
+        background-position: 0 -282.18px;
+    }
+}
+
+.sprite11 {
+    position: absolute;
+    left:900px;
+    top:1300px;
+    background: url(../img/lump/lump3.png) no-repeat;
+    width: 86.64px;
+    height: 141.09px;
+    animation: walk11 1s steps(2) infinite;
+}
+@keyframes walk11{
+    100%{
+        background-position: 0 -282.18px;
+    }
+}
+#ryugakusei h2{
+    position: absolute;
+    left:515px;
+    top:1430px;
+    font-size: 60px;
+    color:#FFF;
+    text-shadow: 1px 2px 5px #000000;
+}
+#ryugakusei h3{
+    position: absolute;
+    left:515px;
+    top:1350px;
+    font-size: 18px;
+}
+#ryugakusei h4{
+    position: absolute;
+    left:615px;
+    top:1474px;
+    font-size: 36px;
+}
+
+.sprite12 {
+    position: absolute;
+    left:650px;
+    top:1324px;
+    background: url(../img/ryugakusei/3/ryugakusei1.png) no-repeat;
+    width: 51px;
+    height: 94.76px;
+    animation: walk12 1s steps(2) infinite;
+}
+@keyframes walk12{
+    100%{
+        background-position: 0 -189.52px;
+    }
+}
+
+.sprite13 {
+    position: absolute;
+    left:722px;
+    top:1324px;
+    background: url(../img/ryugakusei/3/ryugakusei2.png) no-repeat;
+    width: 51px;
+    height: 92.22px;
+    animation: walk13 1s steps(2) infinite;
+}
+@keyframes walk13{
+    100%{
+        background-position: 0 -184.44px;
+    }
+}
+
+.sprite14 {
+    position: absolute;
+    left:265px;
+    top:1240px;
+    background: url(../img/ryugakusei/3/kokki.png) no-repeat;
+    width: 226px;
+    height: 152.5px;
+    animation: walk14 1s steps(2) infinite;
+}
+@keyframes walk14{
+    100%{
+        background-position: 0 -305px;
+    }
+}
+#schoolbus h2{
+    position:absolute;
+    left:140px;
+    top:1650px;
+    font-size: 60px;
+    color:#FFF;
+    text-shadow: 1px 2px 5px #000000;
+}
+#schoolbus h3{
+    position:absolute;
+    left:100px;
+    top:1560px;
+    font-size: 18px;
+}
+#schoolbus h4{
+    position:absolute;
+    left:244px;
+    top:1687px;
+    font-size: 36px;
+}
+#bus-1{
+    position:absolute;
+    left:200px;
+    top:1735px;
+    transform: translateX(0px);
+    animation-name: runBus2;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 18s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+@-webkit-keyframes runBus2 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(150px);
+  }
+}
+#computer h2{
+    position: absolute;
+    left:665px;
+    top:1810px;
+    font-size: 60px;
+    color:#FFF;
+    text-shadow: 1px 2px 5px #000000;
+}
+#computer h3{
+    position: absolute;
+    left:655px;
+    top:1716px;
+    font-size: 18px;
+}
+#computer h4{
+    position: absolute;
+    left:800px;
+    top:1860px;
+    font-size: 36px;
+}
+#computer1{
+    position:absolute;
+    left:864px;
+    top:1650px;
+}
+.sprite15 {
+    position: absolute;
+    left:864px;
+    top:1650px;
+    background: url(../img/computer/computer1.png) no-repeat;
+    width: 127.01px;
+    height: 99.18px;
+    animation: walk15 1s steps(2) infinite;
+}
+@keyframes walk15{
+    100%{
+        background-position: 0 -198.36px;
+    }
+}
+#computer2{
+    position:absolute;
+    left:1026px;
+    top:1650px;
+}
+.sprite16 {
+    position: absolute;
+    left:1026px;
+    top:1650px;
+    background: url(../img/computer/computer2.png) no-repeat;
+    width: 127.01px;
+    height: 99.18px;
+    animation: walk16 1s steps(2) infinite;
+}
+@keyframes walk16{
+    100%{
+        background-position: 0 -198.36px;
+    }
+}
+#gakusei h2{
+    position: absolute;
+    left:855px;
+    top:2160px;
+    font-size: 60px;
+    color:#FFF;
+    text-shadow: 1px 2px 5px #000000;
+}
+#gakusei h3{
+    position: absolute;
+    left:875px;
+    top:2060px;
+    font-size: 18px;
+}
+#gakusei h4{
+    position: absolute;
+    left:995px;
+    top:2210px;
+    font-size: 36px;
+}
+
+.sprite17 {
+    position: absolute;
+    left:768px;
+    top:2180px;
+    background: url(../img/woman/3/woman1.png) no-repeat;
+    width: 59.75px;
+    height: 107.07px;
+    animation: walk17 1s steps(2) infinite;
+}
+@keyframes walk17{
+    100%{
+        background-position: 0 -214.14px;
+    }
+}
+
+.sprite18 {
+    position: absolute;
+    left:965px;
+    top:1933px;
+    background: url(../img/woman/3/woman2.png) no-repeat;
+    width: 63px;
+    height: 117.685px;
+    animation: walk18 1s steps(2) infinite;
+}
+@keyframes walk18{
+    100%{
+        background-position: 0 -235.37px;
+    }
+}
+
+.sprite19 {
+    position: absolute;
+    left:657px;
+    top:2090px;
+    background: url(../img/woman/3/woman3.png) no-repeat;
+    width: 65px;
+    height: 120.675px;
+    animation: walk19 1s steps(2) infinite;
+}
+@keyframes walk19{
+    100%{
+        background-position: 0 -241.35px;
+    }
+}
+
+.sprite20 {
+    position: absolute;
+    left:1083px;
+    top:2091px;
+    background: url(../img/woman/3/woman4.png) no-repeat;
+    width: 63.81px;
+    height: 118.14px;
+    animation: walk20 1s steps(2) infinite;
+}
+@keyframes walk20{
+    100%{
+        background-position: 0 -236.28px;
+    }
+}
+
+.sprite21 {
+    position: absolute;
+    left:770px;
+    top:2045px;
+    background: url(../img/boy/3/boy1.png) no-repeat;
+    width: 61px;
+    height: 111.55px;
+    animation: walk21 1s steps(2) infinite;
+}
+@keyframes walk21{
+    100%{
+        background-position: 0 -223.1px;
+    }
+}
+
+.sprite22 {
+    position: absolute;
+    left:1070px;
+    top:2306px;
+    background: url(../img/boy/3/boy2.png) no-repeat;
+    width: 64.47px;
+    height: 115.49px;
+    animation: walk22 1s steps(2) infinite;
+}
+@keyframes walk22{
+    100%{
+        background-position: 0 -230.98px;
+    }
+}
+
+.sprite23 {
+    position: absolute;
+    left:1020px;
+    top:2144px;
+    background: url(../img/boy/3/boy3.png) no-repeat;
+    width: 64.55px;
+    height: 113.94px;
+    animation: walk23 1s steps(2) infinite;
+}
+@keyframes walk23{
+    100%{
+        background-position: 0 -227.88px;
+    }
+}
+
+.sprite24 {
+    position: absolute;
+    left:889px;
+    top:2301px;
+    background: url(../img/boy/3/boy4.png) no-repeat;
+    width: 65.75px;
+    height: 114.375px;
+    animation: walk24 1s steps(2) infinite;
+}
+@keyframes walk24{
+    100%{
+        background-position: 0 -228.75px;
+    }
+}
+#campus h2{
+    position: absolute;
+    left:155px;
+    top:2170px;
+    font-size: 60px;
+    color:#FFF;
+    text-shadow: 1px 2px 5px #000000;
+}
+#campus h3{
+    position: absolute;
+    left:155px;
+    top:2000px;
+    font-size: 18px;
+}
+#campus h4{
+    position: absolute;
+    left:395px;
+    top:2210px;
+    font-size: 36px;
+}
+
+.sprite25 {
+    position: absolute;
+    left:350px;
+    top:2060px;
+    background: url(../img/horse/horse3.png) no-repeat;
+    width: 214px;
+    height: 167.145px;
+    animation: walk25 1s steps(2) infinite;
+}
+@keyframes walk25{
+    100%{
+        background-position: 0 -334.29px;
+    }
+}
+footer{
+    width:100%;
+    height:170px;
+    background: url(../img/back/hooder.png) left bottom repeat-x;
+}

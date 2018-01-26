@@ -30,7 +30,7 @@
 
         for(var i = 0; i < NUM; i++){
             diameter[i] = random(15,60);
-            colors[i] = color(60,250,random(200,255),random(5,30));
+            colors[i] = color(random(40,60),250,255,random(5,30));
             posX[i] = random(width);
             speedX[i] = random(-4,4);
             posY[i] = random(height);
